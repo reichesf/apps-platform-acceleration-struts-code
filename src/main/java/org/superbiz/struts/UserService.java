@@ -17,13 +17,16 @@
 */
 package org.superbiz.struts;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
+
 
 public interface UserService {
 
     public void add(User user);
 
-    public User find(int id);
+    public User find(long id);
 
     public List<User> findAll();
 }
